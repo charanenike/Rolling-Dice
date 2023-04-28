@@ -32,6 +32,7 @@ btnRoll.addEventListener('click', function () {
       scores[activePlayer];
     if (scores[activePlayer] >= 30) {
       playing = false;
+      document.getElementById(`score--${activePlayer}`).textContent = 30;
       document
         .querySelector(`.player--${activePlayer}`)
         .classList.add('player--winner');
